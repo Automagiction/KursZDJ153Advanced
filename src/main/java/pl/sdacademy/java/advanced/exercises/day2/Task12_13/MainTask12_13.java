@@ -1,4 +1,4 @@
-package pl.sdacademy.java.advanced.exercises.day2;
+package pl.sdacademy.java.advanced.exercises.day2.Task12_13;
 
 import java.util.List;
 
