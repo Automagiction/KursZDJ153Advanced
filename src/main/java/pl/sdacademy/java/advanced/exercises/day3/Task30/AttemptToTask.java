@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Main {
+public class AttemptToTask {
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku, który chcesz odwrócić

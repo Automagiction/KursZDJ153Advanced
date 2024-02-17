@@ -36,25 +36,33 @@ public class Circle {
         point2Ds.add(pointThird);
         point2Ds.add(pointFourth);
         Map<String, Point2D> result = new LinkedHashMap<>();
-//        result.put("Point 1", pointFirst);
-//        result.put("Point 2", pointSecond);
-//        result.put("Point 3", pointThird);
-//        result.put("Point 4", pointFourth);
-//        for(Map.Entry<String, Point2D> element : result.entrySet()){
-//            if(element.getValue().getX() == point.getX() && element.getValue().getY() == point.getY()){
-//                pointKey = element.getKey();
+       result.put("Point 1", pointFirst);
+       result.put("Point 2", pointSecond);
+       result.put("Point 3", pointThird);
+       result.put("Point 4", pointFourth);
+               Map<String, Point2D> printMap = new LinkedHashMap<>();
+       for(Map.Entry<String, Point2D> element : result.entrySet()){
+           if(point.equals(element.getValue())){
+               continue;
+           }
+//           System.out.println("ElementKey: " + element.getKey() + " ElementValue: " + element.getValue());
+//           System.out.println("PointValue: " + point);
+           printMap.put(element.getKey(), element.getValue());
+
+       }
+       return printMap;
+
+//        int pointNumber = 1;
+//        for (int i = 0; i < 4; i++) {
+//            if (point2Ds.get(i).getX() == point.getX() && point2Ds.get(i).getY() == point.getY()) {
+//                continue;
+//
+//            } else {
+//                result.put(("Point "+pointNumber), point2Ds.get(i));
+//                pointNumber++;
 //            }
 //        }
-        int counter = 1;
-        for (int i = 0; i < 4; i++) {
-            if (point2Ds.get(i).getX() == point.getX() && point2Ds.get(i).getY() == point.getY()) {
-                continue;
-            } else {
-                result.put(("Point "+counter), point2Ds.get(i));
-                counter++;
-            }
-        }
-        return result;
+//        return result;
     }
 
 
